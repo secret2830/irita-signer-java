@@ -1,0 +1,32 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgSend",
+        "value": {
+          "from_address": "iaa1kppfarcvt4q82v0md68vn69c6rtejk9pc3xg6t",
+          "to_address": "iaa1kppfarcvt4q82v0md68vn69c6rtejk9pc3xg6t",
+          "amount": [
+            {
+              "denom": "point",
+              "amount": "50"
+            }
+          ]
+        }
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "point",
+          "amount": "50"
+        }
+      ],
+      "gas": "200000"
+    },
+    "signatures": [],
+    "memo": "Sent via Irita",
+    "timeout_height": "0"
+  }
+}
