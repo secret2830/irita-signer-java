@@ -32,7 +32,7 @@ public class Signer {
 
         TxBroadcast broadcastTx = new TxBroadcast();
         broadcastTx.setMode("block");
-        broadcastTx.setTx(tx);
+        broadcastTx.setTx(tx.getValue());
 
         return broadcastTx.toJson();
     }

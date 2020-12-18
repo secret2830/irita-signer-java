@@ -3,17 +3,17 @@ package irita.signer.base;
 import com.alibaba.fastjson.JSON;
 
 public class TxBroadcast {
-    private StdTx tx;
+    private StdTxValue tx;
     private String mode;
 
     public TxBroadcast() {
     }
 
-    public StdTx getTx() {
+    public StdTxValue getTx() {
         return tx;
     }
 
-    public void setTx(StdTx tx) {
+    public void setTx(StdTxValue tx) {
         this.tx = tx;
     }
 

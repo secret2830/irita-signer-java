@@ -1,6 +1,7 @@
 package irita.signer.base;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.annotation.JSONField;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 public class StdTxValue {
     private String memo;
 
+    @JSONField(name="msg")
     @SerializedName("msg")
     private Message[] msgs;
 
