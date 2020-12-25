@@ -1,10 +1,10 @@
 package irita.signer.base;
 
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import irita.signer.utils.*;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonPropertyOrder(alphabetic = true)
@@ -45,6 +45,6 @@ public class StdTx {
     }
 
     public static StdTx fromJson(String json) {
-        return Utils.serializer.fromJson(json, StdTx.class);
+        return JSON.parseObject(json, StdTx.class);
     }
 }
